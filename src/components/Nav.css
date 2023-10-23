@@ -1,0 +1,33 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white; /* Adjust the color as needed */
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4; /* Adjust the hover color as needed */
+}
