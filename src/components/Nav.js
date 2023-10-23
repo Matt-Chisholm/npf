@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import "../fonts/fonts.css";
-import { faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = () => {
@@ -21,23 +21,31 @@ const Nav = () => {
           </h1>
         </div>
         <div className='mobile-menu-toggle' onClick={toggleMobileMenu}>
-          <FontAwesomeIcon icon={faHamburger} />
+          <FontAwesomeIcon icon={faBars} />
         </div>
       </div>
       <ul
         className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}
         style={{ fontFamily: "Tilt-Neon" }}>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/' onClick={toggleMobileMenu}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to='/about' onClick={toggleMobileMenu}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/contact' onClick={toggleMobileMenu}>
+            Contact
+          </Link>
         </li>
         <li>
-          <Link to='/projects'>Projects</Link>
+          <Link to='/projects' onClick={toggleMobileMenu}>
+            Projects
+          </Link>
         </li>
       </ul>
     </nav>
