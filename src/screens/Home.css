@@ -1,0 +1,48 @@
+/* Home.css */
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Tilt-Neon', sans-serif;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency here (0.7 for 70% transparency) */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners to the content */
+}
+
+.title {
+  font-size: 36px;
+  color: #00bcd4; /* Your desired color */
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  color: #333; /* Your desired color */
+  margin-top: 20px;
+}
+
+.right-section {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.8; /* Adjust the opacity to control the image transparency */
+}
+
+.developer-image {
+  width: 100%;
+  max-width: 600px; /* Adjust the image width as needed */
+  height: auto;
+  object-fit: cover; /* Cover the available space while maintaining aspect ratio */
+  border-radius: 10px; /* Add rounded corners to the image */
+}

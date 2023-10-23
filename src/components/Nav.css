@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white; /* Change the background color to white */
+  background-color: transparent; /* Change the background color to white */
   padding: 20px;
   padding-right: 10rem;
 }
